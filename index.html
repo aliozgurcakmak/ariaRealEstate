@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARİA EMLAK & OTO ALIM SATIM - Güvenilir Gayrimenkul ve Araç Yatırımının Adresi</title>
+    <meta name="description" content="Aria Emlak & Oto ile satılık, kiralık gayrimenkul ve araç ilanlarına hızlıca ulaşın. İstanbul'da güvenilir alım-satım danışmanlığı.">
+    <meta name="keywords" content="emlak, oto, satılık daire, kiralık daire, satılık araç, ikinci el araç, istanbul emlak, aria emlak">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo-container">
+                <!-- If logo exists it will load, else onerror will hide it and show text, but we structure it nicely -->
+                <img src="images/logo.png" alt="Aria Emlak & Oto Logo" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
+                <span id="logo-text" class="logo-text" style="display: none;">ARİA EMLAK & OTO</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home">Ana Sayfa</a>
+                <a href="#listings">İlanlar</a>
+                <a href="#auto">Araçlar</a>
+                <a href="#about">Hakkımızda</a>
+                <a href="#contact">İletişim</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="https://wa.me/905376544362" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Güvenilir Gayrimenkul ve Araç Yatırımının Adresi</h1>
+                <p>Aria Emlak & Oto ile satılık, kiralık gayrimenkul ve araç ilanlarına hızlıca ulaşın. Size en uygun yatırım fırsatlarını keşfedin.</p>
+                <div class="hero-buttons">
+                    <a href="#listings" class="btn btn-primary">İlanlara Göz At</a>
+                    <a href="https://wa.me/905376544362?text=Merhaba,%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-outline">WhatsApp'tan Yaz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h3>Gayrimenkul Alım & Satım</h3>
+                    <p>Değerinde ve güvenilir gayrimenkul alım satım işlemleri için profesyonel danışmanlık hizmeti sunuyoruz.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-key"></i></div>
+                    <h3>Kiralık ve Satılık Portföyler</h3>
+                    <p>İhtiyacınıza ve bütçenize en uygun konut, iş yeri ve arsa seçenekleri geniş portföyümüzde.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-car"></i></div>
+                    <h3>Oto Alım & Satım</h3>
+                    <p>İkinci el araçlarınızı değerinde alıyor, güvenilir geçmişe sahip araçları satışa sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section id="listings" class="listings-section">
+        <div class="container">
+            <h2 class="section-title">Güncel İlanlar</h2>
+            
+            <div class="filter-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="Tümü">Tüm İlanlar</button>
+                    <button class="filter-btn" data-filter="Emlak">Emlak</button>
+                    <button class="filter-btn" data-filter="Oto">Oto</button>
+                    <button class="filter-btn" data-filter="Satılık">Satılık</button>
+                    <button class="filter-btn" data-filter="Kiralık">Kiralık</button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="İlan ara (Konum, Başlık vb.)">
+                </div>
+            </div>
+
+            <!-- Listings will be rendered here by JS -->
+            <div class="listings-grid" id="listings-grid">
+                <!-- Data injected via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Auto Highlight Section -->
+    <section id="auto" class="auto-section">
+        <div class="container">
+            <div class="auto-content">
+                <div class="auto-text">
+                    <h2>Araç Alım & Satım Hizmeti</h2>
+                    <p>Aria Emlak & Oto olarak, ikinci el araç alım ve satımında şeffaflık ve güveni ön planda tutuyoruz. Araçlarınızı aynı gün değerinde, nakit olarak alıyoruz.</p>
+                    <p>Satışa sunduğumuz tüm araçlar detaylı ekspertizden geçmiş, sorunsuz ve garantilidir. İhtiyacınıza uygun aracı bulmak veya aracınızı hızlıca satmak için bizimle iletişime geçin.</p>
+                    <a href="https://wa.me/905376544362?text=Merhaba,%20araç%20alım-satım%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Oto Danışmanımızla Görüşün</a>
+                </div>
+                <div class="auto-image">
+                    <img src="images/oto1.jpg" alt="Araç Alım Satım" onerror="this.src='https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Hakkımızda</h2>
+            <p class="about-text">
+                Aria Emlak & Oto olarak İstanbul'da gayrimenkul ve araç alım-satım alanında güvenilir, hızlı ve şeffaf hizmet sunuyoruz. Kurumsal portföy danışmanlığı anlayışımızla doğru yatırım fırsatlarını müşterilerimizle buluşturuyoruz. Yılların verdiği deneyimle, en doğru kararı vermeniz için yanınızdayız.
+            </p>
+            
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Güvenilir Danışmanlık</h4>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Hızlı İletişim</h4>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h4>Bölgesel Portföy Bilgisi</h4>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Şeffaf Süreç Yönetimi</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <h3>Bize Ulaşın</h3>
+                        <p style="margin-bottom: 2rem; color: var(--text-light);">Sorularınız ve detaylı bilgi için iletişim kanallarımızdan bize ulaşabilir veya form üzerinden mesaj gönderebilirsiniz.</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Telefon / WhatsApp</h4>
+                                <p>0537 654 43 62</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adres</h4>
+                                <p>Gazi Mah. 1374 Sk. No:22<br>İstanbul, Turkey 34260</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@ariaemlakotomotiv</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem;">Mesaj Gönder (WhatsApp)</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" class="form-control" required placeholder="Örn: Ahmet Yılmaz">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon Numaranız</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="Örn: 05xx xxx xx xx">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" class="form-control" required placeholder="Nasıl yardımcı olabiliriz?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">WhatsApp'tan Gönder</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Google Maps Embed -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8226027666245!2d28.8920147!3d41.0728981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab0087cb324c1%3A0x6a1b2b8c5f5a5a1f!2sGazi%20Mah.%2C%201374.%20Sk.%20No%3A22%2C%2034260%20Sultangazi%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo.png" alt="Aria Emlak Logo" style="max-height: 40px; margin-bottom: 1rem;" onerror="this.style.display='none';">
+                    <h3 style="color: var(--secondary); font-family: 'Playfair Display', serif; display: inline-block;">ARİA EMLAK & OTO</h3>
+                    <p>Gayrimenkul ve araç alım-satımında güvenilir danışmanınız. Doğru yatırım, güvenli ticaret için hizmetinizdeyiz.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/ariaemlakotomotiv" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/905376544362" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Hızlı Menü</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#listings">Tüm İlanlar</a></li>
+                        <li><a href="#auto">Oto Alım Satım</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gazi Mah. 1374 Sk. No:22<br>İstanbul, Turkey</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>0537 654 43 62</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <span>@ariaemlakotomotiv</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aria Emlak & Oto Alım Satım. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/905376544362" target="_blank" class="floating-whatsapp" title="WhatsApp ile İletişime Geç">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Listing Detail Modal -->
+    <div class="modal" id="listing-modal">
+        <div class="modal-content">
+            <div class="close-modal"><i class="fas fa-times"></i></div>
+            <div class="modal-grid">
+                <div class="modal-img">
+                    <img src="" id="modal-img" alt="İlan Görseli">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-category" id="modal-category">Kategori</div>
+                    <h2 class="modal-title" id="modal-title">İlan Başlığı</h2>
+                    <div class="modal-price" id="modal-price">Fiyat</div>
+                    <div class="modal-location" id="modal-location">Konum</div>
+                    
+                    <p class="modal-desc" id="modal-desc">Açıklama</p>
+                    
+                    <div class="modal-features">
+                        <h4>Özellikler</h4>
+                        <ul id="modal-features-list">
+                            <!-- Injected by JS -->
+                        </ul>
+                    </div>
+                    
+                    <a href="#" target="_blank" class="btn btn-whatsapp" id="modal-wa-btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+                        <i class="fab fa-whatsapp"></i> Bu ilan için WhatsApp'tan bilgi al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data and Scripts -->
+    <script src="listings.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
